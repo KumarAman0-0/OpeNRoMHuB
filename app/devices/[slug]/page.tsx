@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAllDevices, getDeviceBySlug } from "../../../lib/devices";
 import DeviceDiscussion from "../../../components/Giscus";
 import { notFound } from "next/navigation";
@@ -12,9 +13,9 @@ export default function DevicePage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
-      <p className="mono" style={{ marginBottom: "0.2rem", fontSize: "0.82rem", color: "var(--muted)" }}>
-        <a href="/devices">← All devices</a>
-      </p>
+      <Link href="/devices" className="mono back-link">
+        ← All devices
+      </Link>
       <h2 className="mono" style={{ marginBottom: "0.2rem" }}>{device.name}</h2>
       <p style={{ color: "var(--muted)", marginTop: 0, fontSize: "0.9rem" }}>
         {device.manufacturer} · {device.schemeTag} · {device.lockType}

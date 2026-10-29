@@ -9,9 +9,9 @@ export const metadata = {
 export default function RequestPage() {
   return (
     <main>
-      <p className="mono" style={{ marginBottom: "0.2rem", fontSize: "0.82rem", color: "var(--muted)" }}>
-        <Link href="/devices">← All devices</Link>
-      </p>
+      <Link href="/devices" className="mono back-link">
+        ← All devices
+      </Link>
       <h1 className="hero-title" style={{ fontSize: "1.9rem", marginBottom: "0.5rem" }}>
         Request a Device
       </h1>
