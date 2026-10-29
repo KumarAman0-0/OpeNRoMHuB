@@ -1,0 +1,29 @@
+name: Device / ROM request
+description: Ask for a ROM to be added for a locked government-issued device
+title: "[Request]: "
+labels: ["device-request"]
+body:
+  - type: input
+    id: device-name
+    attributes:
+      label: Device name / model number
+    validations:
+      required: true
+  - type: input
+    id: scheme
+    attributes:
+      label: Which scheme issued it (e.g. "UP Govt Student Scheme")
+    validations:
+      required: true
+  - type: textarea
+    id: restrictions
+    attributes:
+      label: What restrictions does it currently have?
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else (chipset, Android version, existing ROM links you've found)
+    validations:
+      required: false

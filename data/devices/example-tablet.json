@@ -1,0 +1,29 @@
+{
+  "slug": "example-tablet",
+  "name": "Example Tablet X1",
+  "manufacturer": "Example OEM",
+  "schemeTag": "UP Govt Student Scheme",
+  "lockType": "MDM + locked bootloader",
+  "status": "unlock-verified",
+  "roms": [
+    {
+      "version": "LineageOS 20 (Android 13)",
+      "date": "2026-09-10",
+      "changelog": "Initial build. Removes MDM, unlocks launcher, wallpaper and system settings.",
+      "downloadUrl": "https://github.com/KumarAman0-0/GovermentOS/releases/download/example-tablet-v20/lineage-20-example-tablet.zip",
+      "uploader": "your-github-username",
+      "verified": true
+    }
+  ],
+  "flashingGuide": [
+    "Backup all data — flashing erases the device.",
+    "Enable Developer Options and OEM unlocking (if present) in Settings.",
+    "Unlock the bootloader via fastboot (model-specific — see device notes).",
+    "Flash the ROM zip using fastboot or a custom recovery (TWRP).",
+    "Reboot and set up the ROM."
+  ],
+  "warnings": [
+    "Unlocking may violate the terms of the government scheme under which this device was issued — proceed at your own responsibility.",
+    "Incorrect flashing can permanently damage (brick) the device."
+  ]
+}
